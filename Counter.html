@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<body>
+    <h1>count</h1>
+    <button id="dec">decrese</button>
+    <button id="inc">increse </button>
+</body>
+</html>
+<script>
+    var count=localStorage.getItem("countervalue") || 0
+
+    if(localStorage.getItem("countervalue")==null){
+        count=0
+    }
+    else{
+        count=localStorage.getItem("countervalue")
+    }
+
+    document.querySelector("h1").innerText=count;
+
+    document.querySelector("#dec").addEventListener("click",decfun)
+    function decfun(){
+        count--;
+        document.querySelector("h1").innerText=count
+        localStorage.setItem("countervalue",count)
+    }
+
+
+    document.querySelector("#inc").addEventListener("click",incfun)
+    function incfun(){
+        count++
+        document.querySelector("h1").innerText=count
+        localStorage.setItem("countervalue",count)
+    }
+</script>

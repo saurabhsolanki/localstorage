@@ -1,0 +1,80 @@
+
+#nav {
+    font-family: sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    background-color:rgba(6, 37, 71, 0.947);
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 15px;
+}
+
+#bar{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+    font-size: 16px;
+}
+
+#userCred {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif
+}
+
+#logout {
+    font-size: 17px;
+    border-radius: 5px;
+    background-color: rgb(241, 68, 68);
+    font-weight: bold;
+    padding: 5px 10px;
+    border: solid 3px rgb(241, 68, 68);
+    color: white;
+    height: 40px;
+}
+
+#logout:hover,
+img+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#image {
+    width: 200px;
+    height: 200px;
+}
+
+img {
+    width:75%;
+}
+
+#imdata {
+    height:auto;
+    width:auto;
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    padding:0px 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 10px;
+    padding:10px 10px;
+}
+
+img+button {
+    font-size: 17px;
+    border-radius: 5px;
+    color: aliceblue;
+    background-color: rgb(247, 62, 0);
+    border: 3px solid rgb(247, 62, 0);
+}
+p{
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+}
+p:hover{
+  color: orange;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation bar</title>
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <div id="nav">
+        <p>Rebook</p>
+        <div id="bar">
+            <p onclick="mensPage()">Men</p>
+            <p onclick="womensPage()">Women</p>
+            <p onclick="login()">Login</p>
+            <p onclick="signup()">Signup</p>
+        </div>
+    </div>
+    <div id="userCred">
+        <div id="profile">
+            <h2>User Profile</h2>
+            <div id="imdata">
+                <div id="image">
+
+                    <img
+                        src="data:image/jpeg;base64,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" />
+                    <button onclick="uploadImage()">Edit <i class="fa fa-edit"></i></button>
+                </div>
+                <div id="data">
+
+                </div>
+            </div>
+        </div>
+        <button id="logout">Log Out</button>
+    </div>
+</body>
+</html>
+
+<script>
+    function mensPage() {
+            window.location.href = "mens.html"
+    }
+
+    function womensPage() {
+            window.location.href = "women.html"
+    }
+
+    function login(){
+        window.location.href = "login.html"
+    }
+
+    function signup(){
+        window.location.href="signup.html"
+    }
+</script>

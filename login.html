@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login </title>
+</head>
+<body>
+        <div id="login">
+            <h1>Login</h1>
+            <form action="" id="loginform">
+                <input type="text" name="" id="email" placeholder="Entre Your Email">
+                <input type="password" name="" id="password" placeholder="Entre Your password">
+                <input type="submit" name="" id="submit" value="Login">
+            </form>
+        </div>
+</body>
+</html>
+<script>
+    // document.querySelector("#loginform").addEventListener("submit",loginfun)
+
+    var data=JSON.parse(localStorage.getItem("signupdata"))
+    // console.log(data,"jfsjfos")
+    for(var i in data)
+    {
+        console.log(data[i].username)
+    }
+
+
+    // function loginfun(){
+        
+    //    event.preventDefault()
+
+    //     let email=document.getElementById("email")
+    //     let password=document.getElementById("password")
+    //     var flag=true
+
+         
+    //     for(var i=0; i<data.length; i++) 
+    //     {
+    //          if(email==""){
+    //              alert("Please fill the email")
+    //              return false
+    //          }
+
+    //          else if(password=="")
+    //         {
+    //             alert("Please fill the Password")
+    //             return false
+    //         }
+
+    //         else if(data[i].useremail==email && data[i].userpass==password)
+    //         {
+    //             window.location.href="nav.html"
+    //             flag=true
+    //             return
+    //         }
+
+    //         else{
+    //             flag==false
+    //         }
+
+    //      };
+
+    //      if(flag==false)
+    //      {
+    //          alert("wrong Credentials")
+    //      }
+
+        // var email=loginform.email.value
+        // let password=loginform.password.value
+
+        // if(email.length==0)
+        // {
+        //     alert("El can't be empty!")
+        //     return
+        // }
+
+        // if(password.length==0)
+        // {
+        //     alert("password can't be empty")
+        //     return
+        // }
+
+        // let data=JSON.parse(localStorage.getItem("signupdata")) || []
+
+        // let flag=false
+
+        // name=""
+
+        // data.forEach(el => {
+        //     if(el.email==email && el.password==password)
+        //     {
+        //         flag=true
+        //     }
+        // });
+
+
+        // if(!flag)
+        // {
+        //     alert("Given information are worng!")
+        // }
+        // else{
+        //     alert("success")
+        // }
+
+        
+        
+        
+        // var logged =JSON.parse(localStorage.getItem("loggedInUser"))
+
+        // if(!logged)
+        // {
+        //     var obj={
+        //         "email":email,
+        //         "password":password,
+        //         "name":name
+        //     }
+
+        //     localStorage.setItem("loggedInUser", JSON.stringify(obj))
+             
+        //     alert("you have successfully login")
+        // }
+    // }
+</script>

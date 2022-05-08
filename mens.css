@@ -1,0 +1,28 @@
+
+#head{
+    text-align: left;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(9,auto);
+    /* width: 80%; */
+    gap: 10px;
+    margin: auto;
+}
+p+img{
+    height: 50px;
+}
+#container>div{
+    text-align: left;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    border-radius: 10px;
+    padding: 20px;
+}
+#container>div>img{
+    /* border: 1px solid red; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
